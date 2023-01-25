@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./Assets/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Assets/styles.css"
+    />
+    <link
+      rel="preconnect"
+      href="//fdn.fontcdn.ir"
+    />
+    <link
+      rel="preconnect"
+      href="//v1.fontapi.ir"
+    />
+    <link
+      href="https://v1.fontapi.ir/css/Vazir"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: Vazir, sans-serif !important;
+      }
+    </style>
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/2.0.0-alpha34/sigma.min.js"></script>
+  </head>
+  <body
+    class="w-full h-full"
+    id="container"
+  >
+    <main class="w-full">
+      <header class="flex items-center justify-center bg-blue-300">
+        <div class="py-5 font-bold text-xl">الگوریتم فلوید</div>
+      </header>
+
+      <section
+        class="font-[20px] w-[50%] mx-auto"
+        style="direction: rtl; line-height: 50px"
+      >
+        در این الگوریتم تلاش بر این است تا کوتاه ترین مسیر بین تمامی شهر ها به
+        دست آید و در این الگوریتم به طور کلی با واسطه کردن یک نود مسر مورد بررسی
+        قرار میگیرد و با حالات قبلی خود بررسی میشود
+      </section>
+
+      <section
+        class="font-[20px] w-[50%] mx-auto border-t-2"
+        style="direction: rtl; line-height: 30px"
+      >
+        در این الگوریتم ورودی تابع ماتریس ارتباطات میباشد و تمامی تغییرات برو
+        روی همان ماتریس ایجاد میشود
+      </section>
+      <section
+        class="font-[20px] w-[50%] mx-auto border-t-2"
+        style="direction: rtl; line-height: 30px"
+      >
+        <span>تعداد نود های خود را وارد کنید </span
+        ><input
+          id="nodeCountInput"
+          class="border-blue-400 rounded-md m-2 p-2 border"
+          type="number"
+        />
+        <button
+          id="submitInputBtn"
+          class="rounded bg-red-400 px-3 py-1"
+        >
+          submit
+        </button>
+      </section>
+      <section
+        class="font-[20px] w-[50%] mx-auto border-t-2"
+        style="line-height: 30px"
+        id="inputPrinter"
+      ></section>
+      <section
+        class="font-[20px] w-[50%] mx-auto border-t-2"
+        style="line-height: 30px"
+        id="outputPrinter"
+      ></section>
+    </main>
+
+    <script src="./Floyd.js"></script>
+  </body>
+</html>
